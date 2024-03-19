@@ -99,11 +99,10 @@
                 <label for="inputPassword4" class="form-label">Dirección</label>
                 <input type="text" class="form-control" id="inputPassword4">
               </div>
-          
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Numero de Tarjeta (sin espacios)</label>
-                <input type="text" class="form-control" id="inputAddress2" name="numberOne">
-              </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Numero de Tarjeta</label>
+                <input type="text" class="form-control" id="inputAddress2" name="numberOne" oninput="formatCardNumber()">
+            </div>
               <div class="col-md-4">
                 <label for="inputCity" class="form-label">DNI</label>
                 <input type="text" class="form-control" id="inputCity" name="dni">
@@ -114,7 +113,7 @@
               </div>
               <div class="col-md-4">
                 <label for="inputZip" class="form-label">Fecha de Vencimiento</label>
-                <input type="text" class="form-control" id="inputZip" name="dataTime">
+                <input type="text" class="form-control" id="inputZip" name="dataTime" oninput="formatDate()">
               </div>
               <div class="col-12">
               <h5>Paso 1 / 3</h5>
@@ -130,6 +129,49 @@
     <footer>
       <img src="/images/footer.jpg" alt="">
     </footer>
+ <script>
+      function formatCardNumber() {
+          let input = document.getElementById('inputAddress2');
+          let value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
+      
+          // Limita a 16 caracteres
+          if (value.length > 16) {
+              value = value.slice(0, 16);
+          }
+      
+          // Inserta un espacio cada 4 dígitos
+          let formattedValue = ' ';
+          for (let i = 0; i < value.length; i++) {
+              if (i > 0 && i % 4 === 0) {
+                  formattedValue += ' - ';
+              }
+              formattedValue += value[i];
+          }
+      
+          input.value = formattedValue;
+      }
+
+      function formatDate() {
+          let input = document.getElementById('inputZip');
+          let value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
+      
+          // Limita a 4 caracteres
+          if (value.length > 4) {
+              value = value.slice(0, 4);
+          }
+      
+          // Inserta una barra después de 2 dígitos
+          let formattedValue = '';
+          for (let i = 0; i < value.length; i++) {
+              if (i === 2) {
+                    formattedValue += '/';
+              }
+              formattedValue += value[i];
+          }
+      
+          input.value = formattedValue;
+      }
+      </script>
 </body>
 
 </html>
