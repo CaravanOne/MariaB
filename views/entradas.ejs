@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head") %>
+    
+<body>
+    <%- include("./partials/header") %>
+    <main class="mainEntradas">
+       
+        <form>
+            <hr>
+            <h3>SELECCIONAR ENTRADAS</h3>
+            <hr>
+  <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Codigo de descuento</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" >
+          </div>
+      <!--     <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Abono por 3 dias</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Cantidad</option>
+                <option value="1">1 - $120.000 </option>
+                <option value="2">2 - $240.000 </option>
+                <option value="3">3 - $360.000  </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div> -->
+          <h3>Campo Delantero</h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Viernes 22/03</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Cantidad</option>
+                <option value="1">1 - $30.000 + $3.574 impuestos</option>
+                <option value="2">2 - $55.000 + $3.574 impuestos</option>
+                <option value="3">3 - $80.000  + $3.574 impuestos </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Sábado 23/03</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Cantidad</option>
+                <option value="1">1 - $30.000 + $3.574 impuestos </option>
+                <option value="2">2 - $55.000 + $3.574 impuestos</option>
+                <option value="3">3 - $80.000  + $3.574 impuestos </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div>
+          <h3>Campo Trasero</h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Viernes 22/03</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Cantidad</option>
+                <option value="1">1 - $20.000  + $3.574 impuestos</option>
+                <option value="2">2 - $38.000 + $3.574 impuestos</option>
+                <option value="3">3 - $55.000 + $3.574 impuestos </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Sábado 23/03</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected hidden>Cantidad</option>
+              <option value="1">1 - $20.000  + $3.574 impuestos</option>
+                <option value="2">2 - $38.000 + $3.574 impuestos</option>
+                <option value="3">3 - $55.000 + $3.574 impuestos </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div>
+<!-- 
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Dia 2 <span> FEID y LIMP BIZKIT</span></label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Cantidad</option>
+                <option value="1">1 - $15.000 </option>
+                <option value="2">2 - $30.000</option>
+                <option value="3">3 - $45.000  </option>
+                <option value="4">Ninguna </option>
+              </select>
+          </div> -->
+<br>
+          <hr>
+         <h3>COMPLETA TUS DATOS</h3>
+<hr>
+        </form>
+        <form action="" method="post" class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputEmail4" name="name">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputPassword4" name="surname">
+              </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputPassword4">
+              </div>
+          
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Numero de Tarjeta (sin espacios)</label>
+                <input type="text" class="form-control" id="inputAddress2" name="numberOne">
+              </div>
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="inputCity" name="dni">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">CVV (codigo 3 digitos)</label>
+                <input type="text" class="form-control" id="date" name="numDorso">
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label">Fecha de Vencimiento</label>
+                <input type="text" class="form-control" id="inputZip" name="dataTime">
+              </div>
+              <div class="col-12">
+              <h5>Paso 1 / 3</h5>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Siguiente</button>
+              </div>
+        </form>
+      
+          
+    </main>
+    <footer>
+      <img src="/images/footer.jpg" alt="">
+    </footer>
+</body>
+
+</html>

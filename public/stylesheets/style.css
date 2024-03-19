@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 ;
+}
+/* ----------------HEADER */
+header{
+  background-color: black;
+  display: flex;
+}
+.title{
+  width: 25%;
+  margin: 5px ;
+}
+.menu{
+  display: flex;
+justify-content: flex-end;
+  width: 70%;
+  font-size: 13px;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+.menu a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: aliceblue;
+}
+/* ----------------------Main entradas */
+form{
+  width:70% ;
+  margin: 0 auto !important;
+}
+form div{
+  padding-top: 15px;
+}
+.error{
+  text-align: center;
+  margin-top: 20%;
+}
+form select option{
+  font-weight: 400;
+}
+h4{
+  text-align: center;
+  color: blueviolet;
+}
+p{
+  text-align: center;
+  padding: 15px 60px;
+}
+.flyer{
+  margin: 0 auto !important;
+  width: 90%;
+  text-align: center;
+}
+.flyer img{
+  width: 60%;
+}
+footer{
+  height: 300px;
+  background-color: black;
+  color: white;
+  text-align: center;margin-top: 20px;
+}
+.mainEntradas{
+  padding: 20px;
+}
+main div{
+  padding:20px ;
+}
+main div p{
+font-weight:400 ;
+}
+span{
+  color: rgb(119, 119, 119);
+}
+/* ----------------MAIN */
+.banner{
+  width: 100vw;
+}
+.verEntradas{
+  display: block;
+  width: 90%;
+  
+  padding: 10px;
+  background-color: rgb(131, 14, 131);
+  text-decoration: none;
+  color:white;
+  text-align: center;
+  margin: 10px auto;
+}
+h3{
+  color: grey;
+  text-align: center;
+}
